@@ -1,0 +1,39 @@
+=====================================
+Phase -3: Automated Testing and CI/CD
+=====================================
+
+what's our goal ?
+Developer pushes code to github
+Github actions start the workflow
+Triggered by a push aor pull request
+
+Run tests:
+Validate model API behavior
+build image
+verify docker packaging
+
+What is CI/CD
+-CI - continuous Integration: Automatically Validate code changes through tests and build checks
+-CD - continuous Delivery: keeps changse ready for release,with production release potentially requiring approvall
+-CD - continuous Deployment: Automatically release changes to production when all required checks pass
+
+Automated Testing
+-Automated Testing catches issues before a change moves to production
+-Pytest + FastAPI test client + Github Actions
+
+update the project structure
+-mlops-first-pipeline
+--tests
+-----test_api.py
+--.github
+-----workflows
+-------ci.yml
+
+Now install two new packages:
+- https: FastAPI testclient uses HTTPx to simulate http request to your application
+- pytest: It discovers and run automated tests, report failures, and returns non-zero exit status when tests failures and returns
+
+pip install httpx pytest
+
+Run Test Locally
+python -m pytest -v

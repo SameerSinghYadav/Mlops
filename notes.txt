@@ -114,3 +114,11 @@ pip install httpx pytest
 
 Run Test Locally
 python -m pytest -v
+
+push the project to github
+commands: 
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SameerSinghYadav/Mlops.git
