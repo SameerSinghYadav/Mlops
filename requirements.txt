@@ -4,8 +4,3 @@ fastapi
 uvicorn
 pydantic
 httpx
-<<<<<<< HEAD
-pytest
-=======
-pytest
->>>>>>> 0cc3d285f235933e217731203566ef153d44901b
